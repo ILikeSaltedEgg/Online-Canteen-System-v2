@@ -19,6 +19,20 @@ require 'db_connection.php';
 
     <?php include 'header.php'; ?>
 
+    <div class="greeting">
+        <span id="greeting">Arellano University Jose Rizal High School</span>
+        <span id="description">An Online Ordering Canteen</span>
+        <h2>Made By: Ace Joshua Calimlim</h2>
+    </div>
+
+    <div class="background-image">
+        <img src="../../Images/arellano-page.png" alt="Arellano Page">
+    </div>
+
+    <div id="image-slider"></div>
+
+    <script src="../../Javascript/image_slider.js"></script>
+
     <div id="menu-container"></div>
 
     <script src="../../Javascript/menu_loader.js"></script>
