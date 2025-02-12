@@ -1,0 +1,199 @@
+/* General Styles */
+html {
+    box-sizing: border-box;
+    height: 100%; /* Ensure the full height of the page is used */
+}
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../assets/fonts/TrajanPro-Regular.woff2') format('woff2'),
+         url('../assets/fonts/TrajanPro-Regular.woff') format('woff'),
+         url('../assets/fonts/TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(247, 247, 247) 21%, rgb(102, 101, 112) 86%);
+    height: 100%; /* Ensure the full height of the page is used */
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%; /* Ensure the header spans the full width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* Logo and Title Container */
+.logo-title-container {
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Align vertically */
+}
+
+/* Logo */
+#logo {
+    width: 60px; /* Adjust the logo size */
+    height: auto;
+    margin-left: 5px; /* Space from the left */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+/* Title */
+.Title {
+    font-size: 1.8em;
+    font-family: "TrajanPro", serif;
+    font-weight: normal;
+    color: rgb(rgb(19, 31, 202), green, blue); /* Highlight color */
+    margin: 0; /* Remove default margin */
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 800px;
+}
+
+.nav-links li {
+    margin-right: 20px; /* Space between each list item */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    padding: 5px 10px; /* Add padding for better clickability */
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    color: #ff6f61; /* Change color on hover for a modern effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+}
+
+#cart-icon {
+    position: absolute;
+    top: 35px;
+    right: 480px;
+    cursor: pointer;
+}
+
+#cart-icon svg {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#cart-icon:hover svg {
+    transform: scale(1.1);
+}
+
+#profile-icon {
+    position: absolute;
+    top: 35px;
+    right: 390px;
+    cursor: pointer;
+}
+
+#profile-icon svg {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 10px;
+}
+
+#profile-icon:hover svg {
+    transform: scale(1.1);
+}
+
+#register-button {
+    position: absolute;
+    top: 35px;
+    right: 390px;
+    padding: 1px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.2em;
+    border-radius: 12px;
+}
+
+#register-button:hover {
+    transform: scale(1.1);
+}
+
+#login-button {
+    position: absolute;
+    top: 35px;
+    right: 320px;
+    padding: 1px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.2em;
+    border-radius: 12px;
+}
+
+#login-button:hover {
+    transform: scale(1.1);
+}
+
+#logout-button {
+    position: absolute;
+    top: 35px;
+    right: 320px;
+    padding: 1px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.2em;
+    border-radius: 12px;
+}
+
+#logout-button:hover {
+    transform: scale(1.1);
+}

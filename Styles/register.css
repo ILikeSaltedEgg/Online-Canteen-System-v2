@@ -1,0 +1,91 @@
+/* General Styles */
+html {
+    box-sizing: border-box;
+    height: 100%; /* Ensure the full height of the page is used */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background for a softer look */
+    color: #333;
+    height: 100%; /* Ensure the full height of the page is used */
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.register-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+/* Left Side: Image */
+.register-image {
+    flex: 1;
+    background-color: #ddd;
+}
+
+.register-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Side: Login Form */
+.register-form {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 12px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e85c50;
+}

@@ -1,0 +1,151 @@
+/* General Styles */
+html {
+    box-sizing: border-box;
+    height: 100%; /* Ensure the full height of the page is used */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background for a softer look */
+    color: #333;
+    height: 100%; /* Ensure the full height of the page is used */
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../assets/fonts/TrajanPro-Regular.woff2') format('woff2'),
+         url('../assets/fonts/TrajanPro-Regular.woff') format('woff'),
+         url('../assets/fonts/TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#logout-button {
+    position: absolute;
+    top: 35px;
+    right: 390px;
+    padding: 1px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.2em;
+    border-radius: 12px;
+}
+
+#logout-button:hover {
+    transform: scale(1.1);
+}
+
+/* Canteen Buttons */
+#Canteen-buttons {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.Canteen-buttons {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #215188;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Canteen-buttons:hover {
+    background-color: #a00;
+}
+
+/* Menu Section */
+#menu-items {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    min-height: 100vh; /* Ensures the section covers the full viewport height */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#menu-items h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#menu-items p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Menu Item List */
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-details {
+    padding: 15px;
+}
+
+.menu-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.menu-details .description {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.menu-details .price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+/* Add more spacing if you want the section to feel more extended */
+#menu-items {
+    padding-bottom: 100px;
+}
+
+/*Cart Control*/
+
+

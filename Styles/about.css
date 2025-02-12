@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../assets/fonts/TrajanPro-Regular.woff2') format('woff2'),
+         url('../assets/fonts/TrajanPro-Regular.woff') format('woff'),
+         url('../assets/fonts/TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* About Section Layout */
+#about {
+    display: flex;
+    justify-content: space-between; /* Text on left, image on right */
+    margin-top: 50px;
+    align-items: center;
+    padding: 60px 10vw;
+    height: 100vh;
+    background: #333;
+    color: white;
+}
+
+/* Content (Text) Layout */
+.about-content {
+    font-family: "TrajanPro", serif;
+    font-size: 20px;
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    margin-bottom: 140px;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 90%;
+    object-fit: cover;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content, .image-container {
+        max-width: 100%;
+    }
+
+    .image-container img {
+        max-height: 50vh;
+    }
+}
